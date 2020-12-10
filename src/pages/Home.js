@@ -1,18 +1,22 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
 const HomeStyled = styled.div`
+width: inherit;
+border: 1px solid black;
+height: 640px;
 
-background-color: blue;
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 `
 
 function Home() {
     return (
         <HomeStyled>
-            <h1>This is home </h1>
-            <Link to="/about">About</Link>
-            <h2>I wanna go home</h2>
+            <img src="https://www.descubrirelarte.es/wp-content/uploads/2018/09/abrir-ICARO.jpg" alt="Matisse"/>
         </HomeStyled>
     )
 }

@@ -2,19 +2,48 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutStyled = styled.div`
-display: flex;
-flex-direction: row;
-background-color: red;
-color: white;
-height: 75vh;
-width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: inherit;
+    height: 640px;
+    border: 1px solid black;
+
+
+    .bio{
+        width:50%;
+        padding: 16px;
+        p{
+
+        }
+    }
+
+    .portrait{
+        width: 50%;
+        padding: 16px;
+        img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+    }
 `
 
 function About() {
     return (
         <AboutStyled>
-           <h1>Hola me llamo Analida</h1>
-            <h2>Soy Restauradora de Arte</h2>
+            <div className="bio">
+                <h2>
+                    ANALIDA LEWIS
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div className="portrait">
+                <img src="https://media.vogue.mx/photos/5c0718843b462916514d73a5/master/pass/la_casa_estudio_de_analida_lewis_en_panama_175613388.jpg" alt="Analida Lewis"/>
+            </div>
         </AboutStyled>
     )
 }
