@@ -19,12 +19,16 @@ const NoticiasStyled = styled.div`
         height: 240px;
         border: 1px solid black;
         padding: 4px;
-        background-color: gray;
         margin: 16px;
+        background-image: url("https://aconstellationjournal.com/wp-content/uploads/2015/03/aconstellation-meetthegirl-analida7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
         p{
             font-size: 20px;
             margin-bottom: 16px;
+            color: white;
+            text-transform: uppercase;
 
         }
 
@@ -45,7 +49,7 @@ function Noticias() {
         <NoticiasStyled>
             <div className="noticiaCard">
                 <p>
-                    TÍTULO 
+                    Meet The Girl: Analida
                 </p>
                 <button>
                      <Link to="/noticia">LEER</Link>
@@ -53,7 +57,7 @@ function Noticias() {
             </div>
             <div className="noticiaCard">
                 <p>
-                    TÍTULO 
+                    Meet The Girl: Analida
                 </p>
                 <button>
                      <Link to="/noticia">LEER</Link>
@@ -61,7 +65,7 @@ function Noticias() {
             </div>
             <div className="noticiaCard">
                 <p>
-                    TÍTULO 
+                    Meet The Girl: Analida
                 </p>
                 <button>
                      <Link to="/noticia">LEER</Link>
@@ -69,7 +73,7 @@ function Noticias() {
             </div>
             <div className="noticiaCard">
                 <p>
-                    TÍTULO 
+                    Meet The Girl: Analida
                 </p>
                 <button>
                     <Link to="/noticia">LEER</Link>
