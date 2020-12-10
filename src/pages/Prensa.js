@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Cotizacion() {
+function Prensa() {
     return (
         <div>
-            <p>Make money money</p>
+            <h2>Prensa</h2>
             
         </div>
     )
 }
 
-export default Cotizacion
+export default Prensa

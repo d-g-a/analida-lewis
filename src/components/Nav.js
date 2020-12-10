@@ -10,8 +10,15 @@ const NavStyled =  styled.nav`
     width: 100%;
     margin-bottom: 16px;
 
-    a{
-        margin-right: 16px;
+    .routes{
+        a{
+        margin-right: 80px;
+        font-size: 18px;
+        }
+    }
+
+    p{
+        font-size: 18px;
     }
 
 `
@@ -21,12 +28,13 @@ function Nav() {
         <NavStyled>
             <div className="routes">
                 <Link to="/about">About</Link>
-                <Link to="/noticias">Noticias</Link>
-                <Link to="/cotizacion">Cotización</Link>
                 <Link to="/contacto">Contacto</Link>
+                <Link to="/trabajo">Trabajo</Link>
+                <Link to="/noticias">Noticias</Link>
+                <Link to="/prensa">Prensa</Link>
             </div>
             <div className="lang">
-                <p>Es/En</p>
+                <p>ES/EN</p>
             </div>
 
         </NavStyled>

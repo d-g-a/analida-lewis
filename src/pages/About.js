@@ -8,24 +8,26 @@ const AboutStyled = styled.div`
     align-items: flex-start;
     width: inherit;
     height: 640px;
-    border: 1px solid black;
+    margin-top: 16px;
+    /* border: 1px solid black; */
 
 
     .bio{
-        width:50%;
-        padding: 16px;
+        width: 50%;
         p{
-
+            font-size: 24px;
+            line-height: 1.4;
         }
     }
 
     .portrait{
+        display: flex;
+        justify-content: flex-end;
         width: 50%;
-        padding: 16px;
+        height: 90%;
         img{
             object-fit: cover;
-            width:100%;
-            height:100%;
+            width: 70%;
         }
     }
 `
@@ -34,9 +36,6 @@ function About() {
     return (
         <AboutStyled>
             <div className="bio">
-                <h2>
-                    ANALIDA LEWIS
-                </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>

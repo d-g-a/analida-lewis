@@ -5,11 +5,12 @@ import Footer from './Footer'
 import Nav from "./Nav"
 
 const LayoutStyles = styled.div`
-    margin: 120px 200px 120px;
+    margin: 80px 200px 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
     .title{
         display: flex;
@@ -20,8 +21,8 @@ const LayoutStyles = styled.div`
         width: 100%;
 
         a{
-        font-family: Helvetica, sans-serif;
-        font-weight: 200px;
+        font-family: Helvetica;
+        font-weight: 400;
         color: black;
         }
 
