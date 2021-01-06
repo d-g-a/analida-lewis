@@ -1,8 +1,4 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import Footer from './Footer'
-import Nav from "./Nav"
 
 const LayoutStyles = styled.div`
     margin: 80px 200px 120px;
@@ -41,24 +37,6 @@ const LayoutStyles = styled.div`
             color: blue;
         }
     }
-
-
 `
 
-function Layout(props) {
-    return (
-        <LayoutStyles>
-            <div className="title">
-                <Link to="/"><h1>ANALIDA LEWIS</h1></Link>
-            </div>
-            <hr/>
-            <Nav/>
-            <p>
-                {props.children}
-            </p>
-            <Footer/>
-        </LayoutStyles>
-    )
-}
-
-export default Layout
+export default LayoutStyles

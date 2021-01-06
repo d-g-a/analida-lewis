@@ -1,27 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import styled from 'styled-components'
+import NavStyled from './Nav.styles'
 
-const NavStyled =  styled.nav`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
-    width: 100%;
-    margin-bottom: 16px;
-
-    .routes{
-        a{
-        margin-right: 80px;
-        font-size: 18px;
-        }
-    }
-
-    p{
-        font-size: 18px;
-    }
-
-`
 
 function Nav() {
     return (
