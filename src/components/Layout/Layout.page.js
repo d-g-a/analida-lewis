@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LayoutStyles from './Layout.styles'
 import Footer from '../Footer'
-import Nav from "../Nav/Nav"
+import Nav from "../Nav"
 
 
 function Layout(props) {
