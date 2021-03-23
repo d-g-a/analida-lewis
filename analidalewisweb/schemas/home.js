@@ -1,8 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import  { FaHome }  from "react-icons/fa";
+
 export default {
     name: 'home',
     type: 'document',
     title: 'Home',
+    icon: FaHome,
     fields: [
         {
             name: 'title',
@@ -11,7 +13,7 @@ export default {
         },
         {
             name: 'foto',
-            type: 'image',
+            type: 'figure',
             title: 'Foto Principal'
         },
         {

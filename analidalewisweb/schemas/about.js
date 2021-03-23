@@ -1,8 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import  { FaRegUser }  from "react-icons/fa";
+
 export default {
     name: 'about',
     type: 'document',
     title: 'About',
+    icon: FaRegUser,
     fields: [
         {
             name: 'title',
@@ -11,12 +13,12 @@ export default {
         },
         {
             name: 'foto',
-            type: 'image',
-            title: 'foto'
+            type: 'figure',
+            title: 'Foto'
         },
         {
             name: 'about',
-            type: 'text',
+            type: 'richText',
             title: 'About'
         },
     ],

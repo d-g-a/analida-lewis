@@ -1,8 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import  { FaStar }  from "react-icons/fa";
+
 export default {
     name: 'prensa',
     type: 'document',
     title: 'Prensa',
+    icon: FaStar,
     fields: [
         {
             name: 'prensaTitulo',
@@ -18,19 +20,19 @@ export default {
         },
         {
             name: 'prensaThumbnail',
-            type: 'image',
+            type: 'figure',
             title: 'Foto Prensa Portada',
             description: 'Thumbnail de la nota'
         },
         {
             name: 'prensaFoto',
-            type: 'image',
+            type: 'figure',
             title: 'Foto Prensa',
             description: 'Título de la prensa'
         },
         {
             name: 'prensaTexto',
-            type: 'text',
+            type: 'richText',
             title: 'Texto de la Prensa',
             description: 'Escribe algo sobre esta nota',
         },

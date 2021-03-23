@@ -1,8 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import  { FaPaintBrush }  from "react-icons/fa";
+
 export default {
     name: 'trabajo',
     type: 'document',
     title: 'Trabajo',
+    icon: FaPaintBrush,
     fields: [
         {
             name: 'trabajoTitulo',
@@ -14,7 +16,7 @@ export default {
             name: 'trabajoSlug',
             type: 'slug',
             title: 'Nombre del slug',
-            description: 'Título para la extensión en url',
+            description: 'usar - entre palabras. Ej. la-venus-en-las-rocas',
             options: {
                 source: 'trabajo',
                 maxLength: 96,
@@ -28,7 +30,7 @@ export default {
         },
         {
             name: 'trabajoProceso',
-            type: 'text',
+            type: 'richText',
             title: 'Proceso de la Obra',
             description: 'Nombre de la obra'
         },
@@ -53,7 +55,7 @@ export default {
         {
             name: 'trabajoInstagramLink',
             type: 'url',
-            title: 'Link to Instagram Video',
+            title: 'Link al video de Instagram',
             description: 'Link al video del proceso en instagram',
         },
     ],

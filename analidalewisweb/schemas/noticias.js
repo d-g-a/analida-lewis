@@ -1,8 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
+import  { FaRegNewspaper }  from "react-icons/fa";
+
 export default {
-    name: 'noticias',
+    name: 'noticia',
     type: 'document',
-    title: 'Noticias',
+    title: 'Noticia',
+    icon: FaRegNewspaper,
     fields: [
         {
             name: 'noticiaTitulo',
@@ -18,19 +20,19 @@ export default {
         },
         {
             name: 'noticiaThumbnail',
-            type: 'image',
+            type: 'figure',
             title: 'Foto Noticia Portada',
             description: 'Thumbnail de la noticia'
         },
         {
             name: 'noticiaFoto',
-            type: 'image',
+            type: 'figure',
             title: 'Foto Noticia',
             description: 'Título de la noticia'
         },
         {
             name: 'noticiaTexto',
-            type: 'text',
+            type: 'richText',
             title: 'Texto de la Noticia',
             description: 'Escribe algo sobre esta nota',
         },
